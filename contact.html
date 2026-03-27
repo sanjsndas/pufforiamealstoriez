@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Pufforia Meal Stories | Contact – Share Your Culinary Journey</title>
+    <meta name="description" content="Reach out to Pufforia Meal Stories – we’d love to hear your recipe stories, collaborations, or kitchen questions. Connect with our sky‑blue culinary community.">
+    <meta name="keywords" content="contact pufforia, meal stories contact, cooking blog contact, recipe submissions, culinary community">
+    <meta name="author" content="Pufforia Meal Stories">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #eef9ff 0%, #d9edf7 100%);
+            color: #1a2c3e;
+            line-height: 1.55;
+        }
+
+        :root {
+            --sky-light: #e3f2fd;
+            --sky-bright: #7bc5e8;
+            --sky-deep: #3a8bbb;
+            --accent-teal: #2c7a6e;
+            --warm-sand: #fef7e0;
+        }
+
+        /* header & navigation (mirroring original) */
+        .navbar {
+            background: #ffffffdd;
+            backdrop-filter: blur(12px);
+            background: linear-gradient(95deg, #cfe9ff, #ffffff);
+            box-shadow: 0 6px 14px rgba(0, 30, 50, 0.08);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--sky-bright);
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #2c6e9e, #50b0d0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #3f7e9e;
+            background: none;
+            -webkit-background-clip: unset;
+            color: #2c6e9e;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .nav-links a {
+            margin: 0 0.6rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: #1f5e7e;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #0b3b4f;
+            border-bottom: 2px solid var(--sky-deep);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* hero & breadcrumb */
+        .hero-contact {
+            background: radial-gradient(circle at 10% 30%, #b9def0, #cae6f5);
+            border-radius: 3rem;
+            padding: 2rem 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+        }
+        .hero-contact h2 {
+            font-size: 2.4rem;
+            color: #1f4b66;
+        }
+
+        /* contact main grid */
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .contact-form-wrapper {
+            flex: 2;
+            min-width: 280px;
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem 2rem 2.2rem;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #cbe4f0;
+        }
+        .contact-info {
+            flex: 1.2;
+            min-width: 260px;
+            background: #fefef7;
+            border-radius: 2rem;
+            padding: 2rem;
+            border: 1px solid #cce3ef;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.03);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #235f7c;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid #c3dcec;
+            background: #ffffff;
+            font-family: inherit;
+            transition: 0.2s;
+            font-size: 1rem;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--sky-deep);
+            box-shadow: 0 0 0 3px rgba(58, 139, 187, 0.2);
+        }
+        .btn-submit {
+            background: var(--sky-deep);
+            border: none;
+            padding: 0.9rem 1.8rem;
+            border-radius: 3rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .btn-submit:hover {
+            background: #2c6a8c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(44,106,140,0.2);
+        }
+
+        .info-block {
+            margin-bottom: 2rem;
+        }
+        .info-block h3 {
+            font-size: 1.5rem;
+            color: #226688;
+            border-left: 5px solid var(--sky-deep);
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        .contact-icon {
+            font-size: 1.8rem;
+            min-width: 42px;
+        }
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .social-link {
+            background: #e2f0f7;
+            border-radius: 2rem;
+            padding: 0.5rem 1.2rem;
+            text-decoration: none;
+            font-weight: 500;
+            color: #1f5e7e;
+            transition: 0.2s;
+        }
+        .social-link:hover {
+            background: var(--sky-bright);
+            color: white;
+        }
+
+        /* FAQ section */
+        .faq-section {
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            border-radius: 2rem;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid #cbe4f0;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .faq-item {
+            background: #f8fdfe;
+            border-radius: 1.5rem;
+            padding: 1rem 1.2rem;
+        }
+        .faq-question {
+            font-weight: 700;
+            color: #1b5a78;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        hr {
+            margin: 1rem 0;
+            border-color: #cae1ef;
+        }
+
+        footer {
+            background: #1d3e52;
+            color: #e2f0f7;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            border-radius: 2rem 2rem 0 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            gap: 1rem;
+        }
+        .footer-links a {
+            color: #b9def5;
+            margin: 0 0.8rem;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .address {
+            font-style: normal;
+            line-height: 1.4;
+        }
+        @media (max-width: 720px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .contact-grid {
+                flex-direction: column;
+            }
+        }
+        .alert-message {
+            background: #dff0f5;
+            border-radius: 2rem;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            text-align: center;
+            color: #1f6e5c;
+            font-weight: 500;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Pufforia Meal Stories <span>✦ sky kitchen tales</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" style="border-bottom: 2px solid #3a8bbb;">Contact</a>
+            <a href="terms.html">Terms Of Privacy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="hero-contact">
+        <h2>☁️ Let's Connect — Share Your Meal Story ☁️</h2>
+        <p style="font-size:1.2rem; margin-top:0.8rem;">Have a cherished recipe, collaboration idea, or just want to say hello?<br> We’re all ears — your stories make the Pufforia sky even brighter.</p>
+        <p style="margin-top:0.7rem;">📧 Reach out and we’ll get back to you within 48 hours (often sooner).</p>
+    </div>
+
+    <div class="contact-grid">
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrapper">
+            <h2 style="color:#226688; margin-bottom: 0.25rem;">✍️ Send a Note</h2>
+            <p style="margin-bottom: 1.5rem; color: #487a9b;">Recipe submissions, questions, or culinary tales — we treasure every message.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g., Emma Skye">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" required placeholder="hello@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject">
+                        <option value="general">💬 General inquiry</option>
+                        <option value="recipe">🍲 Share a recipe / story</option>
+                        <option value="collab">🤝 Collaboration / Press</option>
+                        <option value="support">🛟 Technical support</option>
+                        <option value="other">✨ Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message (or recipe story) *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your culinary moment, recipe idea, or question... we love the details!"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">✉️ Send Sky Message</button>
+                <div id="formFeedback" class="alert-message"></div>
+            </form>
+        </div>
+
+        <!-- CONTACT INFO + ADDRESS + SOCIAL -->
+        <div class="contact-info">
+            <div class="info-block">
+                <h3>📍 Pufforia Atelier</h3>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">🏠</div>
+                    <div>123 Skyline Avenue, Suite 400<br>Culinary District, Dream City, DC 98765</div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">📞</div>
+                    <div><strong>+1 (800) 555-8326</strong><br>Mon–Fri 9am–6pm EST</div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">✉️</div>
+                    <div><strong>hello@pufforiamealstories.com</strong><br>press@pufforia.com (media)</div>
+                </div>
+            </div>
+            <div class="info-block">
+                <h3>🌿 Community & Social</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Instagram</a>
+                    <a href="#" class="social-link">🐦 X (Food Feed)</a>
+                    <a href="#" class="social-link">📌 Pinterest</a>
+                    <a href="#" class="social-link">🎥 YouTube</a>
+                </div>
+                <p style="margin-top: 1.2rem; font-size:0.9rem;">✨ Tag #PufforiaSkyKitchen to be featured in our monthly meal stories!</p>
+            </div>
+            <div class="info-block">
+                <h3>🍽️ Quick Response Hours</h3>
+                <p>📅 We reply within 24–48h. For urgent media inquiries, please mention “URGENT” in subject line. We cherish every recipe submission and will send you a personal note with a small digital thank-you card 🌟</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ SECTION (extra rich content for engagement) -->
+    <div class="faq-section">
+        <h2 style="color:#226688;">💬 Frequently Asked Questions – Before You Write</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">✨ Can I submit my family recipe?</div>
+                <p>Absolutely! We celebrate heritage recipes. Use the contact form, select "Share a recipe / story", and include origin details. If selected, we’ll feature it with full credit and a link to your social or blog.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">📸 Do you accept guest posts or collaborations?</div>
+                <p>Yes! We love working with food creators, chefs, and storytellers. Please choose “Collaboration” in the subject, share your ideas, and we’ll respond within 2–3 days.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">🔒 Is my data safe?</div>
+                <p>Your privacy is our priority. We only use your info to respond to your inquiry. We never share or sell personal data. See our <a href="privacy.html" style="color:#2c7a6e;">Privacy Policy</a> for details.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">📖 Can I request a custom recipe adaptation?</div>
+                <p>Of course! Whether it's gluten-free, allergy-friendly, or a specific cuisine, send us a message and our culinary team will try to craft a personalized suggestion.</p>
+            </div>
+        </div>
+        <hr>
+        <p style="text-align:center; margin-top:0.8rem;"><strong>🌟 Over 59,000+ words of unique culinary stories & recipes await — and your voice makes it richer.</strong> We look forward to connecting under the sky-blue canopy of flavors.</p>
+    </div>
+
+    <!-- additional decorative note to match 56k+ ethos -->
+    <div style="background:#e4f1f9; border-radius: 2rem; padding: 1rem; margin: 2rem 0; text-align:center; border-left: 5px solid #3a8bbb;">
+        🌤️ “Every message adds a new ingredient to our community pantry. Share your meal story and let’s cook up something beautiful together.” — The Pufforia Team
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="address">
+            📍 <strong>Pufforia Meal Stories HQ</strong><br>
+            123 Skyline Avenue, Suite 400<br>
+            Culinary District, Dream City, DC 98765<br>
+            ✆ <strong>+1 (800) 555-8326</strong> (Mon–Fri 9am–6pm EST)
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="index.html#index-terms">Index Terms</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            &copy; 2026 Pufforia Meal Stories — All stories & recipes are original, sky-blue inspired.
+        </div>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">🌤️ “Cook like the sky has no limits — boundless flavor, endless warmth.”</p>
+</footer>
+
+<script>
+    // handle contact form submission simulation (demo + user feedback)
+    const contactForm = document.getElementById('contactForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // simple validation
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name || !email || !message) {
+            feedbackDiv.style.display = 'block';
+            feedbackDiv.style.background = '#ffe6e3';
+            feedbackDiv.style.color = '#b13e3e';
+            feedbackDiv.textContent = '❄️ Please fill in all required fields (name, email, message) before sending.';
+            setTimeout(() => {
+                feedbackDiv.style.display = 'none';
+            }, 4000);
+            return;
+        }
+        
+        if (!email.includes('@') || !email.includes('.')) {
+            feedbackDiv.style.display = 'block';
+            feedbackDiv.style.background = '#ffe6e3';
+            feedbackDiv.style.color = '#b13e3e';
+            feedbackDiv.textContent = '📧 Please enter a valid email address.';
+            setTimeout(() => {
+                feedbackDiv.style.display = 'none';
+            }, 4000);
+            return;
+        }
+        
+        // simulate form submission success
+        feedbackDiv.style.display = 'block';
+        feedbackDiv.style.background = '#dff0f5';
+        feedbackDiv.style.color = '#1f6e5c';
+        feedbackDiv.innerHTML = '✨ Thank you, ' + name + '! Your message soared to our sky kitchen. We’ll reply within 48 hours. ✨';
+        
+        // reset form fields
+        contactForm.reset();
+        
+        // auto-hide after 6 seconds
+        setTimeout(() => {
+            feedbackDiv.style.display = 'none';
+        }, 6000);
+        
+        // optional: you could send actual data to a backend endpoint here, but demo is front-end only.
+        console.log('Contact form submitted (demo) – name:', name, 'subject:', document.getElementById('subject').value);
+    });
+    
+    // smooth anchor scroll for any footer internal links if needed
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            if(targetId && document.getElementById(targetId)) {
+                e.preventDefault();
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Pufforia Meal Stories | Cookies Policy – Your Privacy, Our Promise</title>
+    <meta name="description" content="Learn how Pufforia Meal Stories uses cookies to enhance your culinary journey. Read our transparent cookie policy, manage preferences, and explore with confidence.">
+    <meta name="keywords" content="cookies policy, pufforia cookies, meal stories privacy, cookie consent, food blog cookies">
+    <meta name="author" content="Pufforia Meal Stories">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #eef9ff 0%, #d9edf7 100%);
+            color: #1a2c3e;
+            line-height: 1.55;
+        }
+
+        :root {
+            --sky-light: #e3f2fd;
+            --sky-bright: #7bc5e8;
+            --sky-deep: #3a8bbb;
+            --accent-teal: #2c7a6e;
+            --warm-sand: #fef7e0;
+        }
+
+        /* header & navigation (mirroring original) */
+        .navbar {
+            background: #ffffffdd;
+            backdrop-filter: blur(12px);
+            background: linear-gradient(95deg, #cfe9ff, #ffffff);
+            box-shadow: 0 6px 14px rgba(0, 30, 50, 0.08);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--sky-bright);
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #2c6e9e, #50b0d0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #3f7e9e;
+            background: none;
+            -webkit-background-clip: unset;
+            color: #2c6e9e;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .nav-links a {
+            margin: 0 0.6rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: #1f5e7e;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #0b3b4f;
+            border-bottom: 2px solid var(--sky-deep);
+        }
+        .nav-links a.active {
+            border-bottom: 2px solid var(--sky-deep);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* hero section */
+        .hero-cookies {
+            background: radial-gradient(circle at 10% 30%, #b9def0, #cae6f5);
+            border-radius: 3rem;
+            padding: 2rem 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+        }
+        .hero-cookies h2 {
+            font-size: 2.4rem;
+            color: #1f4b66;
+        }
+        .cookie-badge {
+            display: inline-block;
+            background: white;
+            border-radius: 100px;
+            padding: 0.3rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--sky-deep);
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        /* cookie consent banner simulation (persistent style) */
+        .cookie-consent-banner {
+            background: #1f3e4b;
+            color: #f0f9ff;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .cookie-consent-banner p {
+            flex: 3;
+            font-size: 0.95rem;
+        }
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        .btn-cookie {
+            background: var(--sky-bright);
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            font-weight: bold;
+            color: #1a2c3e;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-cookie-outline {
+            background: transparent;
+            border: 1px solid var(--sky-bright);
+            color: #cbe4f0;
+        }
+        .btn-cookie:hover {
+            background: white;
+            transform: translateY(-1px);
+        }
+
+        /* main content card */
+        .policy-card {
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem 2rem;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+            border: 1px solid #cbe4f0;
+            margin-bottom: 2rem;
+        }
+        .policy-card h2 {
+            color: #226688;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+            border-left: 5px solid var(--sky-deep);
+            padding-left: 1rem;
+        }
+        .policy-card h2:first-of-type {
+            margin-top: 0;
+        }
+        .policy-card h3 {
+            color: #2c6e8c;
+            margin: 1.2rem 0 0.5rem 0;
+            font-size: 1.3rem;
+        }
+        .policy-card p, .policy-card li {
+            margin-bottom: 0.8rem;
+            color: #2c4153;
+        }
+        .policy-card ul, .policy-card ol {
+            margin-left: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .policy-card a {
+            color: var(--accent-teal);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed;
+        }
+        .policy-card a:hover {
+            color: var(--sky-deep);
+        }
+        .highlight-box {
+            background: #eef4fa;
+            border-radius: 1.5rem;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-left: 5px solid var(--sky-deep);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+        }
+        th, td {
+            border: 1px solid #cfe2ec;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background: #e3f2fd;
+            color: #1a5a7a;
+        }
+
+        /* footer same as contact */
+        footer {
+            background: #1d3e52;
+            color: #e2f0f7;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            border-radius: 2rem 2rem 0 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            gap: 1rem;
+        }
+        .footer-links a {
+            color: #b9def5;
+            margin: 0 0.8rem;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .address {
+            font-style: normal;
+            line-height: 1.4;
+        }
+        @media (max-width: 720px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .cookie-consent-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .alert-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2c7a6e;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 3rem;
+            font-weight: 500;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Pufforia Meal Stories <span>✦ sky kitchen tales</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms Of Privacy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html" class="active">Cookies Policy</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="hero-cookies">
+        <div class="cookie-badge">🍪 Transparency first — always</div>
+        <h2>🍪 Cookies Policy & Your Digital Privacy</h2>
+        <p style="font-size:1.2rem; margin-top:0.8rem;">At Pufforia Meal Stories, we believe in clear skies and honest ingredients — including the digital ones. This policy explains how we use cookies, how you can control them, and why they help serve our delicious content.</p>
+        <p style="margin-top:0.7rem;">📌 Last updated: March 26, 2026 | Effective for all visitors worldwide</p>
+    </div>
+
+    <!-- Interactive Cookie Preference Banner (demo simulation) -->
+    <div class="cookie-consent-banner" id="cookieBanner">
+        <p>🍰 We use cookies to enhance your experience, analyze site traffic, and personalize recipe recommendations. By clicking “Accept All”, you consent to our use of cookies. You can manage preferences or reject non-essential ones.</p>
+        <div class="cookie-buttons">
+            <button class="btn-cookie btn-cookie-outline" id="rejectCookiesBtn">Reject Non-Essential</button>
+            <button class="btn-cookie" id="acceptCookiesBtn">Accept All</button>
+        </div>
+    </div>
+
+    <div class="policy-card">
+        <h2>📘 What Are Cookies?</h2>
+        <p>Cookies are small text files placed on your device (computer, smartphone, tablet) when you visit websites. They help the site remember your actions and preferences (like login details, language, or recipe filters) over a period of time, so you don’t have to keep re-entering them. At Pufforia Meal Stories, we use cookies to improve site performance, understand which recipes you love, and serve a seamless culinary experience.</p>
+
+        <h2>🍪 How We Use Cookies — Our Ingredients</h2>
+        <p>We categorize cookies based on their function. Below is a transparent table of the cookies we may deploy across <strong>Pufforia Meal Stories</strong> domain.</p>
+        
+        <table>
+            <thead>
+                <tr><th>Cookie Category</th><th>Purpose</th><th>Examples / Duration</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Strictly Necessary</td><td>Essential for website functionality (navigation, security, form submissions). Cannot be disabled.</td><td>Session cookies (expire after browser close), CSRF tokens.</td></tr>
+                <tr><td>Performance & Analytics</td><td>Collect anonymous data about visitor behavior — pages visited, time spent, recipe popularity. Helps us improve content.</td><td>Google Analytics, first-party analytics — up to 24 months.</td></tr>
+                <tr><td>Functional Preferences</td><td>Remember your choices (like dietary filter, dark/light mode, saved recipe bookmarks).</td><td>User preference cookies (persistent up to 12 months).</td></tr>
+                <tr><td>Targeting / Advertising</td><td>Used to deliver relevant culinary ads and limit ad repetition. We may partner with trusted networks.</td><td>Third-party cookies (opt-out available).</td></tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight-box">
+            🌟 <strong>Your Culinary Choices Matter:</strong> We never sell personal data. Any information gathered via cookies is anonymized whenever possible and used exclusively to enhance your food journey — from trending meal stories to personalized suggestions.
+        </div>
+
+        <h2>⚙️ Managing Your Cookie Preferences</h2>
+        <p>You are in control. You can adjust your browser settings to block or delete cookies, or use our cookie consent tool (the banner above) to accept only necessary cookies. Please note that disabling certain cookies may affect functionality — for example, you might need to re-enter preferences each visit.</p>
+        <ul>
+            <li><strong>Via Browser Settings:</strong> Most browsers allow you to manage cookies through “Settings” → “Privacy & Security”. You can block third-party cookies or delete existing ones.</li>
+            <li><strong>Opt-out of Analytics:</strong> You can install the Google Analytics Opt-out Browser Add-on to prevent data collection.</li>
+            <li><strong>Interactive Consent:</strong> Use the buttons on our cookie banner to update consent anytime. Your preference will be stored for 12 months.</li>
+        </ul>
+
+        <h2>🛡️ Third-Party Cookies & Services</h2>
+        <p>We may embed content from platforms like YouTube recipe videos, Pinterest pins, or Instagram widgets. These third-party services may set their own cookies. We do not control those cookies; please review the respective privacy policies:</p>
+        <ul>
+            <li><a href="#" target="_blank">Google (YouTube / Analytics)</a></li>
+            <li><a href="#" target="_blank">Instagram / Meta</a></li>
+            <li><a href="#" target="_blank">Pinterest</a></li>
+        </ul>
+        <p>Additionally, our “Share a Recipe” feature and comment sections rely on secure session handling — all strictly monitored.</p>
+
+        <h2>📋 Cookie Retention & Updates</h2>
+        <p>We retain cookie-related information only as long as necessary for the stated purposes. Session cookies expire when you close your browser; persistent cookies remain up to 24 months unless manually removed. This policy is reviewed semiannually and will be updated if our data practices change. Significant changes will be notified via a banner or email newsletter.</p>
+
+        <h2>🙋‍♀️ More Questions? Let's Talk</h2>
+        <p>If you have any questions regarding our cookies or privacy practices, please reach out to our Data Protection contact: <strong>privacy@pufforiamealstories.com</strong> or use the <a href="contact.html">contact form</a>. We’re committed to making your experience both delicious and secure.</p>
+
+        <div style="background:#e9f3f9; border-radius: 1.5rem; padding: 1rem; margin-top: 1rem; text-align:center; border: 1px solid #bcd9e8;">
+            🍪 <strong>Did you know?</strong> Our most popular recipe stories are baked with insights from aggregated analytics — helping us serve you more of what you love. Thank you for being part of our sky-blue kitchen community!
+        </div>
+    </div>
+
+    <!-- Additional contextual links to privacy/terms -->
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1rem 0 2rem;">
+        <a href="privacy.html" style="background:#eef3fc; padding: 0.6rem 1.5rem; border-radius: 2rem; text-decoration: none; color: #1f5e7e;">📖 Privacy Policy</a>
+        <a href="terms.html" style="background:#eef3fc; padding: 0.6rem 1.5rem; border-radius: 2rem; text-decoration: none; color: #1f5e7e;">📜 Terms of Service</a>
+        <a href="contact.html" style="background:#eef3fc; padding: 0.6rem 1.5rem; border-radius: 2rem; text-decoration: none; color: #1f5e7e;">✉️ Contact Data Officer</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="address">
+            📍 <strong>Pufforia Meal Stories HQ</strong><br>
+            123 Skyline Avenue, Suite 400<br>
+            Culinary District, Dream City, DC 98765<br>
+            ✆ <strong>+1 (800) 555-8326</strong> (Mon–Fri 9am–6pm EST)
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="cookies.html">Cookies Policy</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            &copy; 2026 Pufforia Meal Stories — All stories & recipes are original, sky-blue inspired.
+        </div>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">🍪 “Cookies make the web taste better — with your consent, we bake them responsibly.”</p>
+</footer>
+
+<div id="toastMsg" class="alert-toast">✔️ Cookie preference saved</div>
+
+<script>
+    // COOKIE CONSENT SIMULATION (Front-end demo with localStorage)
+    // This demonstrates interactive cookie preference management and matches the Pufforia style.
+    
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('acceptCookiesBtn');
+    const rejectBtn = document.getElementById('rejectCookiesBtn');
+    const toast = document.getElementById('toastMsg');
+    
+    let currentConsent = localStorage.getItem('pufforiaCookieConsent');
+    
+    function showToastMessage(message, isError = false) {
+        toast.textContent = message || '✔️ Cookie preference saved';
+        toast.style.backgroundColor = isError ? '#b13e3e' : '#2c7a6e';
+        toast.style.opacity = '1';
+        setTimeout(() => {
+            toast.style.opacity = '0';
+        }, 3200);
+    }
+    
+    function hideBannerIfConsentGiven() {
+        if (currentConsent === 'accepted' || currentConsent === 'rejected') {
+            cookieBanner.style.display = 'none';
+        } else {
+            cookieBanner.style.display = 'flex';
+        }
+    }
+    
+    function setConsent(choice) {
+        if (choice === 'accepted') {
+            localStorage.setItem('pufforiaCookieConsent', 'accepted');
+            currentConsent = 'accepted';
+            // Simulate enabling all cookies (including analytics, functional)
+            console.log('[Pufforia] All cookies enabled — enhanced experience active.');
+            showToastMessage('🍪 You accepted all cookies. Thank you! Personalized recipe suggestions are now active.', false);
+        } else if (choice === 'rejected') {
+            localStorage.setItem('pufforiaCookieConsent', 'rejected');
+            currentConsent = 'rejected';
+            // Simulate disabling non-essential cookies
+            console.log('[Pufforia] Only strictly necessary cookies are active. Analytics and targeting disabled.');
+            showToastMessage('🔒 Only essential cookies are active. You can change preferences anytime.', false);
+        }
+        hideBannerIfConsentGiven();
+    }
+    
+    if (currentConsent === 'accepted') {
+        hideBannerIfConsentGiven();
+    } else if (currentConsent === 'rejected') {
+        hideBannerIfConsentGiven();
+    } else {
+        cookieBanner.style.display = 'flex';
+    }
+    
+    acceptBtn.addEventListener('click', () => {
+        setConsent('accepted');
+    });
+    
+    rejectBtn.addEventListener('click', () => {
+        setConsent('rejected');
+    });
+    
+    // Optional: add listener for manual reset if needed? but fine. Also provide a way to reset preferences?
+    // For demonstration, also allow reset via console or custom link. But to mirror a real site, we add a small "reset preferences" text inside the policy card.
+    const resetLink = document.createElement('span');
+    const policyCard = document.querySelector('.policy-card');
+    if (policyCard) {
+        const resetOption = document.createElement('div');
+        resetOption.style.marginTop = '1rem';
+        resetOption.style.fontSize = '0.85rem';
+        resetOption.style.textAlign = 'right';
+        resetOption.innerHTML = '<a href="#" id="resetCookiePref" style="color:#2c7a6e; text-decoration:underline;">⚙️ Update cookie preferences</a>';
+        policyCard.appendChild(resetOption);
+        const resetPrefBtn = document.getElementById('resetCookiePref');
+        if (resetPrefBtn) {
+            resetPrefBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('pufforiaCookieConsent');
+                currentConsent = null;
+                cookieBanner.style.display = 'flex';
+                showToastMessage('🍪 Cookie preferences reset. You can now choose again.', false);
+            });
+        }
+    }
+    
+    // Simulate analytics opt-out logic note (educational)
+    const rejectAnalyticsMsg = () => {
+        if (currentConsent === 'rejected') {
+            console.log('[Pufforia] Analytics scripts are not loaded due to user preference.');
+        }
+    };
+    rejectAnalyticsMsg();
+    
+    // Enhance user experience: add small interactive cookie table tooltip? already fine.
+    // Also guarantee that the banner is responsive and consistent.
+    
+    // Additional: For complete authenticity, ensure all footer links and internal navigation is consistent.
+    // Add smooth scroll for anchor links if any
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            if(targetId && document.getElementById(targetId)) {
+                e.preventDefault();
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
+    // When consent is accepted, we can optionally simulate a change in UI (just console log)
+    if (currentConsent === 'accepted') {
+        // For demonstration, we add a tiny style update to reflect "cookies accepted"
+        const hero = document.querySelector('.hero-cookies');
+        if (hero && !hero.querySelector('.accepted-badge')) {
+            const acceptedFlag = document.createElement('div');
+            acceptedFlag.className = 'cookie-badge';
+            acceptedFlag.style.background = '#cbe7dd';
+            acceptedFlag.style.marginTop = '10px';
+            acceptedFlag.innerHTML = '✓ Cookie consent active — enhanced features enabled';
+            hero.appendChild(acceptedFlag);
+        }
+    } else if (currentConsent === 'rejected') {
+        const hero = document.querySelector('.hero-cookies');
+        if (hero && !hero.querySelector('.reject-badge')) {
+            const rejectFlag = document.createElement('div');
+            rejectFlag.className = 'cookie-badge';
+            rejectFlag.style.background = '#ffe6cf';
+            rejectFlag.style.color = '#a3512c';
+            rejectFlag.innerHTML = '🔒 Essential cookies only — privacy mode';
+            hero.appendChild(rejectFlag);
+        }
+    }
+    
+    // Provide optional 'clear all' for demo (transparent and user-friendly)
+    // Also ensure that if banner hidden, no conflicts appear.
+    window.addEventListener('load', () => {
+        // small dummy check for consistent layout
+        console.log('Pufforia Cookies Policy fully loaded — transparency & flavor united.');
+    });
+</script>
+</body>
+</html>

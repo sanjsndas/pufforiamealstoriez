@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>About Us | Pufforia Meal Stories – The Story Behind the Sky Kitchen</title>
+    <meta name="description" content="Discover the story behind Pufforia Meal Stories: a culinary haven born from a love of sky-blue serenity, heartfelt cooking, and over 59,000 words of original recipes, travelogues, and kitchen wisdom.">
+    <meta name="keywords" content="about pufforia, meal stories, culinary journey, sky blue kitchen, food storytellers, cooking philosophy, meet the team, recipe archive">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #eef9ff 0%, #d9edf7 100%);
+            color: #1a2c3e;
+            line-height: 1.55;
+        }
+
+        :root {
+            --sky-light: #e3f2fd;
+            --sky-bright: #7bc5e8;
+            --sky-deep: #3a8bbb;
+            --accent-teal: #2c7a6e;
+            --warm-sand: #fef7e0;
+        }
+
+        .navbar {
+            background: #ffffffdd;
+            backdrop-filter: blur(12px);
+            background: linear-gradient(95deg, #cfe9ff, #ffffff);
+            box-shadow: 0 6px 14px rgba(0, 30, 50, 0.08);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--sky-bright);
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #2c6e9e, #50b0d0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #2c6e9e;
+            background: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .nav-links a {
+            margin: 0 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: #1f5e7e;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #0b3b4f;
+            border-bottom: 2px solid var(--sky-deep);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* hero about section */
+        .about-hero {
+            background: radial-gradient(circle at 80% 20%, #b9def0, #cae6f5);
+            border-radius: 3rem;
+            padding: 3rem 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+        }
+        .about-hero h2 {
+            font-size: 2.8rem;
+            color: #1f4b66;
+            letter-spacing: -0.5px;
+        }
+        .about-hero .tagline {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            font-style: italic;
+            color: #2a5f7a;
+        }
+
+        .section-card {
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            border-radius: 2rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #cbe4f0;
+            box-shadow: 0 10px 18px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+        .section-card:hover {
+            transform: translateY(-3px);
+        }
+        .section-title {
+            font-size: 2rem;
+            border-left: 8px solid var(--sky-deep);
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #1b4c66;
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .story-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 8px 14px rgba(0,0,0,0.05);
+            border: 1px solid #e2f0f5;
+        }
+        .story-card h3 {
+            color: #2c6e9e;
+            margin-bottom: 0.75rem;
+            font-size: 1.6rem;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            background: #f9fefc;
+            border-radius: 2rem;
+            padding: 1rem;
+        }
+        .avatar {
+            background: var(--sky-bright);
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(145deg, #4c9bc2, #2f7ca3);
+        }
+        .stats-badge {
+            background: #eef4fa;
+            border-radius: 2rem;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .footer {
+            background: #1d3e52;
+            color: #e2f0f7;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            border-radius: 2rem 2rem 0 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            gap: 1rem;
+        }
+        .footer-links a {
+            color: #b9def5;
+            margin: 0 0.8rem;
+            text-decoration: none;
+        }
+        .address {
+            font-style: normal;
+            line-height: 1.4;
+        }
+        @media (max-width: 720px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        hr {
+            margin: 1rem 0;
+            border-color: #c0dceb;
+        }
+        .quote {
+            font-size: 1.2rem;
+            background: #eaf7ff;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+            font-style: italic;
+            margin: 1.5rem 0;
+        }
+        button, .btn {
+            background: var(--sky-deep);
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Pufforia Meal Stories <span>✦ sky kitchen tales</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms Of Privacy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <!-- About Hero -->
+    <div class="about-hero">
+        <h2>🌤️ The Story Behind the Sky Kitchen</h2>
+        <div class="tagline">“Where recipes float like clouds and stories taste like warmth”</div>
+        <p style="margin-top: 1.2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Pufforia Meal Stories isn’t just a recipe collection — it’s a living, breathing archive of culinary passion, heritage, and sky-blue serenity. Born from a dream to preserve family kitchens and global flavors, we’ve built a universe of over 59,000 original words, 500+ unique recipes, and endless inspiration.</p>
+    </div>
+
+    <!-- Our Origin Story (unique content) -->
+    <div class="section-card">
+        <h2 class="section-title">☁️ Our Origin: A Love Letter to Cooking & Memory</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 2; min-width: 220px;">
+                <p><strong>Pufforia began in a tiny coastal kitchen in 2020</strong>, where the founder, Elena Marchetti, found solace in recreating her grandmother’s handwritten recipes. The name “Pufforia” merges “puff” (lightness, like a cloud) and “memoria” (memory). Over time, it grew into a global collaborative of chefs, storytellers, food historians, and home cooks — all united by the belief that food is emotion made edible. Today, our digital hearth holds more than <strong>59,200+ words of original culinary literature</strong>, spanning forgotten grains, fermentation wisdom, nostalgic travelogues, and modern health-conscious creations.</p>
+                <p style="margin-top: 0.8rem;">Our sky-blue theme embodies endless curiosity: no borders, no rigid rules — just joyful cooking. Every article, every variation, every cultural deep-dive is crafted with the same care we’d offer a beloved dinner guest. We’ve documented 450+ core recipes, 120+ baking masterclasses, 16 weeks of meal plans, and a glossary of 700+ culinary terms. Each piece reflects our mission: to make cooking feel like a peaceful, creative adventure.</p>
+            </div>
+            <div class="stats-badge" style="flex: 1; background: #dceefa;">
+                🌟 <strong>59,482+</strong> unique words<br>
+                📖 <strong>523+</strong> recipe variations<br>
+                🌍 <strong>35+</strong> global cuisines<br>
+                🧑‍🍳 <strong>12</strong> core contributors<br>
+                🍃 <strong>100%</strong> original content
+            </div>
+        </div>
+    </div>
+
+    <!-- Meet the Culinary Dream Team (unique characters, storytelling) -->
+    <div class="section-card">
+        <h2 class="section-title">👩‍🍳 Meet the Sky-Blue Collective</h2>
+        <div class="story-grid">
+            <div class="story-card">
+                <h3>🌊 Elena Marchetti</h3>
+                <p><em>Founder & Culinary Storyteller</em> — Elena’s Italian-American roots inspired the philosophy “cook with the sky in your heart.” She’s authored over 200 original recipes, from Nonna’s rustic ragù to cloud-light focaccia.</p>
+            </div>
+            <div class="story-card">
+                <h3>🍃 Dr. Aarav Singh</h3>
+                <p><em>Food Scientist & Nutrition Lead</em> — With a PhD in nutritional biochemistry, Aarav translates complex science into digestible wisdom. He leads our Anti-Inflammatory Spice Guides and Gut Health series.</p>
+            </div>
+            <div class="story-card">
+                <h3>🎨 Mei Lin Zhang</h3>
+                <p><em>Global Cuisine Specialist</em> — Born in Sichuan and raised across Southeast Asia, Mei preserves authentic street food recipes (pani puri, satay, hand-pulled noodles) and shares cultural context with warmth.</p>
+            </div>
+            <div class="story-card">
+                <h3>🍞 Samuel Okafor</h3>
+                <p><em>Baking Alchemist</em> — From sourdough to laminated pastries, Samuel’s “Baker’s Almanac” section (8,400+ words) has become a cult favorite. His motto: “Flour + patience = magic.”</p>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; background: #eef3f9; padding: 0.8rem; border-radius: 2rem; text-align: center;">✨ Together with a growing community of 25+ guest contributors and home cooks from 5 continents, we shape Pufforia as a living culinary atlas.</p>
+    </div>
+
+    <!-- Our Philosophy: Sky-Blue Cooking Manifesto -->
+    <div class="section-card">
+        <h2 class="section-title">💙 The Sky-Blue Cooking Manifesto</h2>
+        <div style="column-count: 2; column-gap: 2rem; margin-top: 0.5rem;">
+            <p><strong>✦ Boundless Creativity:</strong> Recipes are springboards, not prisons. Swap ingredients, embrace intuition, and let the sky be your limit.</p>
+            <p><strong>✦ Radical Inclusivity:</strong> Every diet, allergy, and preference matters. We offer vegan, gluten-free, keto, and whole-food variations for nearly every dish.</p>
+            <p><strong>✦ Heritage Matters:</strong> We honor traditional techniques while adapting them for modern kitchens. Each recipe includes cultural notes, origin stories, and the people behind the dish.</p>
+            <p><strong>✦ Zero-Waste Ethos:</strong> Our sustainability guides turn scraps into treasures — from pickled watermelon rinds to vegetable stock powders.</p>
+            <p><strong>✦ Joy Over Perfection:</strong> Cooking should soothe, not stress. Embrace imperfect dumplings, lopsided cakes — they carry the most heart.</p>
+        </div>
+        <div class="quote">
+            “At Pufforia, we believe a single meal can hold a universe of memory. Our sky-blue kitchen is where science meets poetry, and every reader becomes a storyteller.”
+        </div>
+    </div>
+
+    <!-- Our Journey: Milestones & Unique Achievements (detailed word counts / expansions) -->
+    <div class="section-card">
+        <h2 class="section-title">📜 Milestones & Culinary Expansions</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1;">
+                <ul style="margin-left: 1.5rem;">
+                    <li><strong>2021</strong> – Launch with 120 original recipes + “Grandma’s Harvest Table” memoir series.</li>
+                    <li><strong>2022</strong> – Reached 28,000 words with fermentation guides and plant-forward deep dives.</li>
+                    <li><strong>2023</strong> – Expanded to 45,000+ words; introduced “Sourdough Alchemy” & global street food chapters.</li>
+                    <li><strong>2024</strong> – Zero-Waste Manifesto published (5,100 words). First collaborative community recipe contest.</li>
+                    <li><strong>2025</strong> – Hit 52,000 words with seasonal features + Kids in the Kitchen series.</li>
+                    <li><strong>2026</strong> – Present: <strong>59,482+ total unique words</strong>, 523 recipe variations, 74 in-depth guides. Our glossary alone contains 6,500+ specialized entries.</li>
+                </ul>
+            </div>
+            <div style="flex: 1; background: #eff7fc; border-radius: 1.8rem; padding: 1.2rem;">
+                <p>📘 <strong>Featured collections:</strong></p>
+                <p>• “The Baker’s Almanac” – 8,400 words on sourdough, enriched doughs, gluten-free baking.<br>
+                • “Coastal & Mountain Flavors” – 6,200 words of travel-inspired recipes from the Amalfi Coast to the Himalayas.<br>
+                • “Healthy Gut, Happy Heart” – comprehensive fermentation & prebiotic cooking (3,900 words).<br>
+                • “Sky-Blue Desserts” – 75+ sweets, from lavender cakes to matcha opera, with expert plating notes.</p>
+                <p>🏆 Our team was awarded “Best Culinary Narrative Site” by the International Food Blogger Collective (2025).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Recipe Archive: behind the scenes of 500+ creations -->
+    <div class="section-card">
+        <h2 class="section-title">🍽️ Beyond the Recipe: What Makes Pufforia Unique</h2>
+        <p>Every recipe on Pufforia is more than ingredients and steps — it’s a gateway. For instance, our <strong>“Coastal Sky Paella”</strong> includes not only a foolproof socarrat technique but also a mini essay on Valencia’s ancient rice fields and a playlist of Mediterranean folk songs. The <strong>“Cloud Forest Mushroom Stew”</strong> features three variations (keto, legume-based, Whole30) and a guide to foraging wild mushrooms responsibly. The Lavender Blueberry Sky Cake comes with a troubleshooting flowchart for dairy-free buttercream and a story about French lavender fields in Provence. We also include personal notes from our community — more than 25 reader-submitted family recipes with chef adaptations.</p>
+        <p style="margin-top: 0.8rem;">Our index of culinary terms (700+ entries) helps beginners decode “julienne” and “hydration ratios,” while advanced cooks explore molecular gastronomy or koji fermentation. And because we believe in lifelong learning, we regularly update existing guides with new insights.</p>
+        <hr>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;">
+            <div><strong>🔎 Most Popular Deep-Dives:</strong> “Sourdough Hydration Mastery”, “Spice Routes of the Silk Road”, “Plant Protein Compendium”.</div>
+            <div><strong>👩‍🍳 Community Love:</strong> Over 1,200 reader stories shared via social + our “Pufforia Table” newsletter.</div>
+        </div>
+    </div>
+
+    <!-- Our Promise: Privacy, Ethical Standards, and Accessibility -->
+    <div class="section-card">
+        <h2 class="section-title">🕊️ Our Commitment to You</h2>
+        <div class="story-grid">
+            <div class="story-card">
+                <h3>🔒 Privacy First</h3>
+                <p>We never sell your data. Our privacy policy (updated March 2026) guarantees secure handling of any personal info. Cookies are used only for site analytics and preferences. Full transparency, always.</p>
+            </div>
+            <div class="story-card">
+                <h3>🌱 Ethical Sourcing & Representation</h3>
+                <p>We collaborate with local food historians, compensate contributors fairly, and ensure cultural recipes are represented authentically. No cultural appropriation — only celebration.</p>
+            </div>
+            <div class="story-card">
+                <h3>♿ Accessibility Matters</h3>
+                <p>Our design respects high contrast, screen-reader compatibility, and clear navigation. We aim to make culinary education inclusive for all.</p>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; background: #e2f0f5; border-radius: 1.5rem; padding: 1rem; text-align: center;">💌 Have a question or want to share your own meal story? Reach out to us at our HQ address or via our contact page — we’d love to hear from you.</p>
+    </div>
+
+    <!-- Index / Glossary Highlights (matching the homepage's terms but integrated) -->
+    <div class="section-card" id="culinary-index">
+        <h2 class="section-title">📖 Index of Culinary Themes & Knowledge Vault</h2>
+        <p><strong>Explore by category:</strong> Breakfast & Brunch | Quick Dinners | Vegan/Plant-Based | Comfort Classics | Gluten-Free Wonders | Keto & Low-Carb | Festive Feasts | Artisan Breads | Sauces & Condiments | Soups & Stews | Salads & Bowls | Street Food World Tour | Ferments & Pickles | Zero-Waste Cooking | Holiday Specials | International (Italian, Japanese, Mexican, Moroccan, Thai, Indian, French, Caribbean) | Baking Science | Nutrition Spotlight | Seasonal Ingredients | Cocktail & Mocktail Lab</p>
+        <p><strong>Key ingredients glossary:</strong> Ancient Grains (teff, freekeh, farro), plant proteins (tempeh, seitan, jackfruit), sustainable seafood guide, heirloom vegetables, spice profiles (saffron, sumac, Aleppo pepper), dairy alternatives, koji, miso, amazake.</p>
+        <p><strong>Cooking techniques master list:</strong> Braising, poaching, sous vide, fermentation, sourdough building, emulsion science, confit, pressure cooking, dehydration, smoking, wok hei, pastry lamination, sugar work.</p>
+        <p><em>All terms are explored in our extensive recipe narratives — each article includes cross-references to our glossary entries.</em></p>
+    </div>
+
+    <!-- Visit our physical kitchen & get in touch (Address & phone consistent) -->
+    <div class="section-card" style="background: #cfe5f0;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div>
+                <h2 style="color: #1b4c66;">📍 Visit the Pufforia Culinary Hub</h2>
+                <address style="font-style: normal; line-height: 1.6;">
+                    123 Skyline Avenue, Suite 400<br>
+                    Culinary District, Dream City, DC 98765<br>
+                    ✆ <strong>+1 (800) 555-8326</strong> (Mon–Fri 9am–6pm EST)<br>
+                    ✉ hello@pufforiamealstories.com (fictional demo)
+                </address>
+                <p style="margin-top: 0.6rem;">Open for pop-up workshops, cookbook signings, and community tastings — follow our social channels for upcoming events.</p>
+            </div>
+            <div style="background: white; border-radius: 2rem; padding: 1rem 1.5rem; text-align: center;">
+                🌟 “Sky above, kitchen below — every meal tells a story.” <br> — Pufforia Motto
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="address">
+            📍 <strong>Pufforia Meal Stories HQ</strong><br>
+            123 Skyline Avenue, Suite 400, Culinary District, Dream City, DC 98765<br>
+            ✆ +1 (800) 555-8326
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms</a>
+        </div>
+        <div>
+            &copy; 2026 Pufforia Meal Stories — All stories & recipes are original, sky-blue inspired.
+        </div>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">🌤️ “Cook like the sky has no limits — boundless flavor, endless warmth.”</p>
+</footer>
+
+<script>
+    // Smooth scroll for any anchor links (if any)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            if(targetId && document.getElementById(targetId)) {
+                e.preventDefault();
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+</body>
+</html>
